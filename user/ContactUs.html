@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="ContactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="content flex_space">
+          <div class="logo">
+            <img src="logo.png" alt="">
+          </div>
+          <div class="navlinks">
+            <ul id="menulist">
+              <li><a href="Home.html">home</a></li>
+              <li><a href="About.html">about</a></li>
+              <li><a class="active2" href="#">contact</a></li>
+              <li><a href="Booking Now.html"><button class="primary-btn">BOOK NOW</button></a></li>
+            </ul>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+          </div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form action="ContactUs.php" method="post" >
+                      <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email">
+                         </div>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i>+601159751013</p>
+                    <p><i class="fas fa-envelope"></i>m.ibadurrahman2004@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Jalan Kesuma, Semenyih, Malaysia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+    
+        function menutoggle() {
+          if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "100vh";
+          } else {
+            menulist.style.maxHeight = "0px";
+          }
+        }
+    </script>
+</body>
+</html>

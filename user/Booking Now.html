@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Booking Now.css">
+    <title>Form Booking</title>
+</head>
+
+<body class="main_bg">
+
+    <div class="form">
+        <div class="form-text">
+            <h1>Book Now </h1>
+            
+        </div>
+        <div class="main-form">
+            <form action="BookingProcess.php" method="post">
+                <div>
+                    <span>Check-in</span>
+                    <input type="date" name="Check_in" id="Check_in" required>
+                </div>
+                <div>
+                    <span>check-out</span>
+                    <input type="date" name="Check_out" id="Check_out" required> 
+                </div>
+                <div>
+                    <!-- <---this is the select option--->
+                    <span>Adult</span>
+                    <select name="Adult" id="Adult" required>
+                        <option value=""><---People---></option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                    </select>
+                    <!-- <---this is the select option--->
+                </div>
+                <div>
+                    <span>Children</span>
+                    <select name="Children" id="Children">
+                        <option value=""><---People---></option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                    </select>
+                </div>
+            
+                <div id="submit">
+                    <input type="submit"  value="SUBMIT" id="booking_id">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
